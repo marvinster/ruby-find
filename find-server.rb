@@ -3,11 +3,6 @@
 
 require 'app' 
 
-class User < ActiveRecord::Base 
-end
-
-puts User.first.inspect
-
 def async_fetch(url)
   f = Fiber.current
   http = EventMachine::HttpRequest.new(url).get :timeout => 10

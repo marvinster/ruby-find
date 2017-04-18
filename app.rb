@@ -14,5 +14,3 @@ ActiveRecord::Base.establish_connection(
 
 $LOAD_PATH << "."
 Dir["models/*.rb"].each {|file| require file }
-
-

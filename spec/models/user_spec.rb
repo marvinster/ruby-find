@@ -5,7 +5,6 @@ RSpec.describe User do
   before :all do
   end
   it "should have and email that contains an at sign" do
-    puts subject.class
     expect(subject.email).to match(/@/)
   end
   it "should be fabulous" do
