@@ -4,7 +4,8 @@ require 'fiber'
 require 'active_record'
 require 'pry'
 #require 'prettyprint'
-if(/rspec$/ ~= $0)
+if(/rspec$/ =~ $0)
+  
   ActiveRecord::Base.establish_connection(
     :adapter  => 'postgresql',
     :database => 'search',

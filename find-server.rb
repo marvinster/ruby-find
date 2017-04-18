@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-
+$: << '.'
 require 'app' 
 
 def async_fetch(url)
