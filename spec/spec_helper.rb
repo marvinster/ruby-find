@@ -2,11 +2,6 @@ require_relative '../app'
 require 'factory_girl'
 require 'faker'
 
-ActiveRecord::Base.establish_connection(
-  :adapter  => 'postgresql',
-  :database => 'search',
-  :username => 'pavel',
-  :host     => '/tmp')
 
 RSpec.configure do |config|
   
