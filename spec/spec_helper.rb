@@ -1,7 +1,13 @@
+require 'simplecov'
+
+SimpleCov.start do
+  add_filter "/spec/"
+end
+
+
 require_relative '../app'
 require 'factory_girl'
 require 'faker'
-
 puts "program name: #{$0}"
 
 RSpec.configure do |config|

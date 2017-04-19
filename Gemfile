@@ -11,3 +11,4 @@ gem 'rspec'
 gem 'pry'
 gem 'factory_girl'
 gem 'faker'
+gem 'simplecov', require: false
