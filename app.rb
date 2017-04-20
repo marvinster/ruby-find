@@ -11,8 +11,13 @@ if(ENV['IN_DOCKER'] == 'yes')
     :username => ENV['DBUSER'],
     :host     => '192.168.1.251',
     :password => ENV['DBPASSWORD'])
+elsif ENV['TRAVIS'] == 'true'
+  ActiveRecord::Base.establish_connection(
+    :adapter  => 'postgresql',
+    :database => 'search',
+    :username => 'postgres',
+    :host     => 'localhost')
 else
-
   ActiveRecord::Base.establish_connection(
     :adapter  => 'postgresql',
     :database => 'search',
