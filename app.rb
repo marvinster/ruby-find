@@ -15,9 +15,9 @@ else
   ActiveRecord::Base.establish_connection(
     :adapter  => 'postgresql',
     :database => 'search',
-    :username => ENV[DBUSER],
+    :username => ENV['DBUSER'],
     :host     => '192.168.1.251',
-    :password => ENV[DBPASSWORD])
+    :password => ENV['DBPASSWORD'])
 
 end
 
