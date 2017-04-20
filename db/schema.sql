@@ -48,7 +48,6 @@ CREATE TABLE bayes_engines (
 );
 
 
-ALTER TABLE bayes_engines OWNER TO pavel;
 
 --
 -- Name: bayes_engines_id_seq; Type: SEQUENCE; Schema: public; Owner: pavel
@@ -62,7 +61,6 @@ CREATE SEQUENCE bayes_engines_id_seq
     CACHE 1;
 
 
-ALTER TABLE bayes_engines_id_seq OWNER TO pavel;
 
 --
 -- Name: bayes_engines_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: pavel
@@ -86,7 +84,6 @@ CREATE TABLE block_rules (
 );
 
 
-ALTER TABLE block_rules OWNER TO pavel;
 
 --
 -- Name: block_rules_id_seq; Type: SEQUENCE; Schema: public; Owner: pavel
@@ -100,7 +97,6 @@ CREATE SEQUENCE block_rules_id_seq
     CACHE 1;
 
 
-ALTER TABLE block_rules_id_seq OWNER TO pavel;
 
 --
 -- Name: block_rules_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: pavel
@@ -122,7 +118,6 @@ CREATE TABLE events (
 );
 
 
-ALTER TABLE events OWNER TO pavel;
 
 --
 -- Name: items_id_seq; Type: SEQUENCE; Schema: public; Owner: pavel
@@ -136,7 +131,6 @@ CREATE SEQUENCE items_id_seq
     CACHE 1;
 
 
-ALTER TABLE items_id_seq OWNER TO pavel;
 
 --
 -- Name: items_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: pavel
@@ -161,7 +155,6 @@ CREATE TABLE page_stores (
 );
 
 
-ALTER TABLE page_stores OWNER TO pavel;
 
 --
 -- Name: page_stores_id_seq; Type: SEQUENCE; Schema: public; Owner: pavel
@@ -175,7 +168,6 @@ CREATE SEQUENCE page_stores_id_seq
     CACHE 1;
 
 
-ALTER TABLE page_stores_id_seq OWNER TO pavel;
 
 --
 -- Name: page_stores_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: pavel
@@ -193,7 +185,6 @@ CREATE TABLE schema_migrations (
 );
 
 
-ALTER TABLE schema_migrations OWNER TO pavel;
 
 --
 -- Name: training_actions; Type: TABLE; Schema: public; Owner: pavel
@@ -212,7 +203,6 @@ CREATE TABLE training_actions (
 );
 
 
-ALTER TABLE training_actions OWNER TO pavel;
 
 --
 -- Name: training_actions_id_seq; Type: SEQUENCE; Schema: public; Owner: pavel
@@ -226,7 +216,6 @@ CREATE SEQUENCE training_actions_id_seq
     CACHE 1;
 
 
-ALTER TABLE training_actions_id_seq OWNER TO pavel;
 
 --
 -- Name: training_actions_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: pavel
@@ -248,7 +237,6 @@ CREATE TABLE training_engines (
 );
 
 
-ALTER TABLE training_engines OWNER TO pavel;
 
 --
 -- Name: training_engines_id_seq; Type: SEQUENCE; Schema: public; Owner: pavel
@@ -262,7 +250,6 @@ CREATE SEQUENCE training_engines_id_seq
     CACHE 1;
 
 
-ALTER TABLE training_engines_id_seq OWNER TO pavel;
 
 --
 -- Name: training_engines_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: pavel
@@ -285,7 +272,6 @@ CREATE TABLE training_sets (
 );
 
 
-ALTER TABLE training_sets OWNER TO pavel;
 
 --
 -- Name: training_sets_id_seq; Type: SEQUENCE; Schema: public; Owner: pavel
@@ -299,7 +285,6 @@ CREATE SEQUENCE training_sets_id_seq
     CACHE 1;
 
 
-ALTER TABLE training_sets_id_seq OWNER TO pavel;
 
 --
 -- Name: training_sets_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: pavel
@@ -328,7 +313,6 @@ CREATE TABLE urls (
 );
 
 
-ALTER TABLE urls OWNER TO pavel;
 
 --
 -- Name: urls_id_seq; Type: SEQUENCE; Schema: public; Owner: pavel
@@ -342,7 +326,6 @@ CREATE SEQUENCE urls_id_seq
     CACHE 1;
 
 
-ALTER TABLE urls_id_seq OWNER TO pavel;
 
 --
 -- Name: urls_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: pavel
@@ -388,7 +371,6 @@ CREATE TABLE users (
 );
 
 
-ALTER TABLE users OWNER TO pavel;
 
 --
 -- Name: users_id_seq; Type: SEQUENCE; Schema: public; Owner: pavel
@@ -402,7 +384,6 @@ CREATE SEQUENCE users_id_seq
     CACHE 1;
 
 
-ALTER TABLE users_id_seq OWNER TO pavel;
 
 --
 -- Name: users_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: pavel
