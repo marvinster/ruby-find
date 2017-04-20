@@ -50,6 +50,7 @@ GEM
       method_source (~> 0.8.1)
       slop (~> 3.4)
     public_suffix (2.0.5)
+    rake (10.4.2)
     rspec (3.5.0)
       rspec-core (~> 3.5.0)
       rspec-expectations (~> 3.5.0)
@@ -87,6 +88,7 @@ DEPENDENCIES
   faker
   pg
   pry
+  rake
   rspec
   simplecov
 
