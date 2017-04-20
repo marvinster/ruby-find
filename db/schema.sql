@@ -1,3 +1,6 @@
+CREATE database search;
+
+\c search
 --
 -- PostgreSQL database dump
 --
