@@ -4,14 +4,13 @@ require 'fiber'
 require 'active_record'
 require 'pry'
 #require 'prettyprint'
-if(ENV['DOCKER'] == 'yes')
+if(ENV['IN_DOCKER'] == 'yes')
   ActiveRecord::Base.establish_connection(
     :adapter  => 'postgresql',
     :database => 'search',
     :username => ENV['DBUSER'],
     :host     => '192.168.1.251',
     :password => ENV['DBPASSWORD'])
-
 else
 
   ActiveRecord::Base.establish_connection(
