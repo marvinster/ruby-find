@@ -13,3 +13,5 @@ gem 'factory_girl'
 gem 'faker'
 gem 'simplecov', require: false
 gem 'rake'
+gem 'codecov', :require => false, :group => :test
+

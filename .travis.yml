@@ -9,3 +9,6 @@ services:
 before_script:
   - psql -U postgres < db/schema.sql
 
+env:
+  - CODECOV_TOKEN=0c4607a9-f179-411f-92dd-e6dd1fe1d4a9
+
