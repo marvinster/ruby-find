@@ -5,5 +5,5 @@ require 'app'
 require 'server/find'
 
 EventMachine.run do
-  EventMachine.start_server "localhost", 9999, FindServer
+  EventMachine.start_server "ldev.arslogi.ca", 9999, FindServer
 end
