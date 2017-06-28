@@ -10,5 +10,5 @@ class FindServer < EventMachine::Connection
   end
   def unbind
     puts "-- they left"
- end
+  end
 end

@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'guard'
+gem 'guard-rspec'
 gem 'eventmachine'
 gem 'em-synchrony'
 gem 'em-pg-client'
