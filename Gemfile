@@ -17,3 +17,4 @@ gem 'simplecov', require: false
 gem 'rake'
 gem 'codecov', :require => false, :group => :test
 
+gem 'haml'

@@ -1,4 +1,5 @@
 require "json"
+require "haml"
 # server code itself
 
 
@@ -9,6 +10,15 @@ class FindServer < EventMachine::Connection
   end
   
   def receive_data data
+    if data =~ /GET (.*)/
+      if file = File.open($1)
+        page = file.read
+        html = Haml::Engine.new(page)
+        send_data html.render
+      end
+      
+      return
+    end
     send_data ">> you sent #{data}\n"
     send_data User.first.inspect.to_s + "\n"
     begin
@@ -21,6 +31,6 @@ class FindServer < EventMachine::Connection
   end
   
   def unbind
-    #puts "-- they left"
+    puts "-- they left"
   end
 end

@@ -23,5 +23,17 @@ RSpec.describe "findserver doing ssl connection"  do
     expect(subject).to receive(:send_data).at_least(:once)
     subject.receive_data 'daasdasdsad'
   end
+   
+  it "should send gemfile when requested" do
+    allow_any_instance_of(FindServer).to receive(:start_tls)
+    expect(subject).to receive(:send_data).at_least(:once).with(/rubygems/)
+    subject.receive_data("GET Gemfile")
+  end
+  
+  it "should send gemfile.haml rendered when requested" do
+    allow_any_instance_of(FindServer).to receive(:start_tls)
+    expect(subject).to receive(:send_data).at_least(:once).with(/<html/i)
+    subject.receive_data("GET Gemfile.haml")
+  end
   
 end
