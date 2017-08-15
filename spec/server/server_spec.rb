@@ -35,5 +35,4 @@ RSpec.describe "findserver doing ssl connection"  do
     expect(subject).to receive(:send_data).at_least(:once).with(/<html/i)
     subject.receive_data("GET Gemfile.haml")
   end
-  
 end
